@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Teamify
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application that shows a list of current Team users using React.
 
-## Available Scripts
+![Teamify_image](images/teamify.jpg)
 
-In the project directory, you can run:
+![Teamify_mobile](images/teamify-mobile.jpg)
 
-### `npm start`
+## Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Welcome to teamify repository. This responsive web application is a project that uses axios for fetching api from https://jsonplaceholder.typicode.com and using pure CSS3 & HTML5 for design.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Prerequisites needed before installing program.
+  - Node.js
+  - Git version control
+  - Source code editor
+  - Windows, Mac or Linux OS
 
-### `npm run build`
+### Installing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- To set up this project.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. clone repo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+git clone https://github.com/emmanuelbitang/teamify.git
+```
 
-### `npm run eject`
+2. cd into directory
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+cd teamify
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. install dependencies using npm or yarn
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+yarn OR npm i
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Executing program
 
-## Learn More
+- To run the program.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+yarn run start OR npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Authors
 
-### Code Splitting
+Emmanuel Bitang  
+[@emnl_mrno](https://www.instagram.com/emnl_mrno/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Version History
 
-### Analyzing the Bundle Size
+- 0.1
+  - Initial Release
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## License
 
-### Making a Progressive Web App
+This project is licensed under the MIT License - see the LICENSE.md file for details
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Acknowledgments
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [create-react-app](https://create-react-app.dev/)
+- [React](https://reactjs.org/)
+- [@testing-library/react](https://testing-library.com/)
+- [Node.js](https://nodejs.org/en/)
+- [axios](https://axios-http.com/)
+- [ESLint](https://eslint.org/)
+- [Git](https://git-scm.com/)
