@@ -24,7 +24,7 @@ const Member = ({
         <div className='container'>
           <ul className='details'>
             <li>
-              <h1>{name}</h1>
+              <h1 data-testid='name'>{name}</h1>
             </li>
             <li>Username: {username}</li>
             <li>
@@ -34,10 +34,16 @@ const Member = ({
               </a>
             </li>
             <li>
-              Email: <a href={"mailto:" + email}>{email}</a>
+              Email:{" "}
+              <a href={"mailto:" + email} data-testid='email-link'>
+                {email}
+              </a>
             </li>
             <li>
-              Phone Number: <a href={"tel:" + phone}>{phone}</a>
+              Phone Number:{" "}
+              <a href={"tel:" + phone} data-testid='phone-link'>
+                {phone}
+              </a>
             </li>
             <li>Address: {`${suite} ${street}, ${city}, ${zipcode}`}</li>
             <li>Company: {company}</li>

@@ -1,6 +1,6 @@
 # Teamify
 
-A web application that shows a list of current Team users using React.
+A responsive web application that shows a list of current Team users using React.
 
 ![Teamify_image](images/teamify.jpg)
 
@@ -8,7 +8,7 @@ A web application that shows a list of current Team users using React.
 
 ## Description
 
-Welcome to teamify repository. This responsive web application is a project that uses axios for fetching api from https://jsonplaceholder.typicode.com and using pure CSS3 & HTML5 for design.
+Welcome to teamify repository. This responsive web application is a project that uses axios for fetching data api from https://jsonplaceholder.typicode.com and using CSS3 & HTML5 for design.
 
 ## Getting Started
 

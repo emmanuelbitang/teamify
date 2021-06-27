@@ -10,12 +10,14 @@ function Home() {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
+    const ac = new AbortController();
     axios
       .get("https://jsonplaceholder.typicode.com/users")
       .then((res) => {
         setMembers(res.data);
       })
-      .catch((error) => console.log(error));
+      .catch((error) => alert(error));
+    return () => ac.abort();
   }, []);
 
   const handleChange = (e) => {
@@ -42,6 +44,8 @@ function Home() {
               placeholder='Search via name or email...'
               name='search'
               onChange={handleChange}
+              title='search'
+              data-testid='search-textbox'
             />
           </form>
         </div>
@@ -49,7 +53,9 @@ function Home() {
 
       <h1 className='title'>Team Members</h1>
 
-      {filteredMembers.length > 0 ? (
+      {!members ? (
+        <div className='title'>Loading...</div>
+      ) : filteredMembers.length > 0 ? (
         <div className='cards'>
           {filteredMembers.map((team) => {
             return (
@@ -70,8 +76,8 @@ function Home() {
           })}
         </div>
       ) : (
-        <div className='no-result'>
-          No results found for <b>{search} </b>
+        <div className='no-result' data-testid='no-result'>
+          No results found for <b>{search}</b>
         </div>
       )}
     </div>
