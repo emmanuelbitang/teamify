@@ -2,12 +2,14 @@
 import React, { useState, useEffect } from "react";
 import Member from "../Members";
 import axios from "axios";
+import LoadSpinner from "../LoadSpinner";
 
 import "./Home.css";
 
 function Home() {
   const [members, setMembers] = useState([]);
   const [search, setSearch] = useState("");
+  const [isLoaded, setIsLoaded] = useState(true);
 
   useEffect(() => {
     const ac = new AbortController();
@@ -15,10 +17,11 @@ function Home() {
       .get("https://jsonplaceholder.typicode.com/users")
       .then((res) => {
         setMembers(res.data);
+        setIsLoaded(false);
       })
       .catch((error) => alert(error));
     return () => ac.abort();
-  }, []);
+  }, [search]);
 
   const handleChange = (e) => {
     setSearch(e.target.value);
@@ -53,8 +56,8 @@ function Home() {
 
       <h1 className='title'>Team Members</h1>
 
-      {!members ? (
-        <div className='title'>Loading...</div>
+      {isLoaded ? (
+        <LoadSpinner />
       ) : filteredMembers.length > 0 ? (
         <div className='cards'>
           {filteredMembers.map((team) => {
